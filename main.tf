@@ -1,5 +1,5 @@
 data "digitalocean_ssh_key" "main" {
-  name = var.ssh_key_name
+  name = var.do_ssh_key_name
 }
 
 resource "digitalocean_droplet" "vpn" {
