@@ -9,7 +9,7 @@ Note: by default CA password protection is disabled. if you want to enable refer
 
 ```
 module "openvpn" {
-  source          = "github.com/Dvelezs94/terraform-do-openvpn"
+  source          = "Dvelezs94/terraform-digitalocean-openvpn"
   do_ssh_key_name = "mySSHKey"
   ssh_key_path    = "~/.ssh/mysshkey.pem"
   openvpn_devices = ["my_laptop", "cellphone", "my_tablet"]
