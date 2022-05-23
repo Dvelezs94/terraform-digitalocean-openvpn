@@ -77,4 +77,6 @@ No modules.
 
 | Name | Description |
 |------|-------------|
+| <a name="output_droplet_id"></a> [droplet\_id](#output\_droplet\_id) | Droplet id |
 | <a name="output_droplet_ip"></a> [droplet\_ip](#output\_droplet\_ip) | Droplet IPv4 public IP |
+| <a name="output_droplet_urn"></a> [droplet\_urn](#output\_droplet\_urn) | Droplet urn |
