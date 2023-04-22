@@ -5,11 +5,15 @@ This terraform works alongside kylemanna [OpenVPN implementation](https://hub.do
 
 Note: by default CA password protection is disabled. if you want to enable refer to [kylemanna's docs](https://github.com/kylemanna/docker-openvpn/blob/master/bin/ovpn_initpki)
 
+This terraform asumes you have an existing SSH key created in your digitalocean account, which it uses to SSH into the openvpn server.
+To access to your SSH settings in your DO account go to `Settings > Security` or [follow this link](https://cloud.digitalocean.com/account/security)
+
 # Quickstart
 
 ```
 module "openvpn" {
   source          = "Dvelezs94/terraform-digitalocean-openvpn"
+  version         = "0.1.2"
   do_ssh_key_name = "mySSHKey"
   ssh_key_path    = "~/.ssh/mysshkey.pem"
   openvpn_devices = ["my_laptop", "cellphone", "my_tablet"]
