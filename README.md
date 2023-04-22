@@ -13,7 +13,7 @@ To access to your SSH settings in your DO account go to `Settings > Security` or
 ```
 module "openvpn" {
   source          = "Dvelezs94/terraform-digitalocean-openvpn"
-  version         = "0.1.2"
+  version         = "0.1.4"
   do_ssh_key_name = "mySSHKey"
   ssh_key_path    = "~/.ssh/mysshkey.pem"
   openvpn_devices = ["my_laptop", "cellphone", "my_tablet"]
